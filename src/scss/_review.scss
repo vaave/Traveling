@@ -1,0 +1,67 @@
+.review {
+   position: relative;
+   padding: 150px 0 100px;
+   &::before, &::after {
+      content: "";
+      position: absolute;
+      background-size: cover;
+   }
+   &::before {
+      top: 0;
+      left: 0;
+      transform: translateY(60%);
+      width: 334px;
+      height: 178px;
+      background: url(./../src/img/acent/11.png) no-repeat;
+   }
+
+   &::after {
+      right: 0;
+      bottom: 0;
+      width: 407px;
+      height: 82px;
+      background: url(./../src/img/acent/12.png) no-repeat;
+   }
+
+   &__title {
+      max-width: 60%;
+      margin: 0 auto;
+      text-align: center;
+      font-family: $acent;
+      font-size: 81px;
+      line-height: 1;
+      font-weight: 700;
+      color: $primary;
+      margin-bottom: 45px;
+   }
+
+   &__inner {
+      position: relative;
+   }
+
+   &__item {
+      border: 3px solid $primary;
+      border-radius: 10px;
+      padding: 70px 40px;
+      text-align: center;
+   }
+
+   &__img {
+      margin-bottom: 50px;
+   }
+
+   &__name {
+      font-family: $basic;
+      font-size: 25px;
+      font-weight: 900;
+      color: $primary;
+      margin-bottom: 25px;
+   }
+
+   &__text {
+      font-family: $basic;
+      font-size: 17px;
+      line-height: 1.2;
+      color: #6d6d6d;
+   }
+}

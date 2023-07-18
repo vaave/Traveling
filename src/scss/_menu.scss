@@ -1,0 +1,23 @@
+.menu {
+
+   &__list {
+      display: flex;
+      margin-right: 50px;
+   }
+
+   &__item {
+      margin: 0 60px 0 0;
+      &:last-child {
+         margin: 0;
+      }
+   }
+
+   &__link {
+      font-size: 21px;
+      color: $primary;
+      font-weight: 300;
+      &:hover {
+         font-weight: 700;
+      }
+   }
+}

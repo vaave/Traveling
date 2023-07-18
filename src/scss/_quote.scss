@@ -1,0 +1,57 @@
+.quote {
+   position: relative;
+   padding: 200px 0;
+   &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 236px;
+      height: 855px;
+      opacity: 0.2;
+      background: url(./../src/img/acent/8.png) no-repeat;
+      background-size: cover;
+   }
+   
+   &__inner {
+      position: relative;
+      max-width: 65%;
+      margin: 0 auto;
+      text-align: center;
+      &::after {
+         content: "";
+         position: absolute;
+         top: 105%;
+         left: 0;
+         transform: translateX(-50%);
+         width: 424px;
+         height: 108px;
+         background: url(./../src/img/acent/7.png) no-repeat;
+         background-size: cover;
+      }
+   }
+
+   &__icon {
+      margin-bottom: 60px;
+   }
+
+   &__text {
+      font-family: $acent;
+      font-size: 98px;
+      line-height: 1;
+      font-weight: 700;
+      color: $primary;
+      margin-bottom: 60px;
+      span {
+         font-style: italic;
+         text-decoration: underline;
+      }
+   }
+
+   &__bottom {
+      font-family: $basic;
+      font-size: 25px;
+      font-weight: 900;
+      color: $primary;
+   }
+}

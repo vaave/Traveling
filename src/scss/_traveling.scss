@@ -1,0 +1,74 @@
+.traveling {
+   padding: 50px 0;
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__img {
+      position: relative;
+      flex: 0 1 46%;
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 0;
+         transform: translate(-50%, -50%);
+         width: 71px;
+         height: 254px;
+         opacity: 0.9;
+         background: url(./../src/img/acent/9.png) no-repeat;
+         background-size: cover;
+      }
+      & img {
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__info {
+      flex: 0 1 49%;
+   }
+
+   &__info-img {
+      margin-bottom: 80px;
+   }
+
+   &__header {
+      display: flex;
+      margin-bottom: 40px;
+   }
+
+   &__title {
+      flex: 0 1 40%;
+      font-family: $acent;
+      margin-right: 35px;
+      font-size: 36px;
+      line-height: 1.4;
+      font-weight: 700;
+      letter-spacing: -1px;
+      text-decoration: underline;
+      color: $primary;
+   }
+
+   &__text {
+      flex: 0 1 57%;
+      font-family: $basic;
+      font-size: 17px;
+      line-height: 1.2;
+      color: $primary;
+      p:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
+
+   &__btn {
+      float: right;
+      svg {
+         width: 141px;
+         height: 55px;
+         fill: $primary;
+      }
+   }
+}

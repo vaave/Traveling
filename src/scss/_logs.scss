@@ -1,0 +1,60 @@
+.logs {
+   position: relative;
+   padding: 50px 0;
+   background-color: $primary;
+   &::before, &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      background-size: cover;
+   }
+   &::before {
+      top: 50px;
+      left: 0;
+      width: 433px;
+      height: 164px;
+      background: url(./../src/img/acent/3.png) no-repeat;
+   }
+   &::after {
+      right: 0;
+      bottom: 50px;
+      width: 475px;
+      height: 88px;
+      background: url(./../src/img/acent/4.png) no-repeat;
+   }
+   
+   &__inner {
+      position: relative;
+      z-index: 2;
+      max-width: 40%;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   &__title {
+      font-family: $acent;
+      font-weight: 700;
+      font-size: 55px;
+      color: $background;
+      margin-bottom: 30px;
+   }
+
+   &__text {
+      font-family: $basic;
+      font-size: 17px;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      color: $background;
+      margin-bottom: 50px;
+   }
+
+   &__btn {
+      @extend %button;
+      border-color: $background;
+      color: $background;
+      &:hover {
+         background-color: $background;
+         color: $primary;
+      }
+   }
+}

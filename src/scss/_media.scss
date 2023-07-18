@@ -1,0 +1,520 @@
+@media(max-width: 1439px) {
+   .blog {
+      &::before, &::after {
+         display: none;
+      }
+   }
+
+   .slick {
+      &-arrow {
+         top: 105%;
+      }
+
+      &-next {
+         right: 30%;
+      }
+
+      &-prev {
+         left: 30%;
+      }
+   }
+}
+
+@media(max-width: 1200px) {
+
+   .header {
+      &.scroll {
+         background-color: $primary;
+      }
+      &__btn {
+         color: $background;
+         border-color: $background;
+      }
+   }
+   
+   .menu {
+      &__link {
+         color: $background;
+      }
+   }
+
+   .hero {
+      background: url(./../src/img/hero.jpg) top center no-repeat;
+      background-size: cover;
+      &::before {
+         display: none;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 1;
+         background: rgba($color: $primary, $alpha: .5);
+      }
+
+      &__container {
+         display: block;
+      }
+
+      &__header {
+         position: relative;
+         z-index: 2;
+         text-align: center;
+      }
+
+      &__title {
+         color: $background;
+      }
+
+      &__text {
+         color: $background;
+      }
+
+      &__btn {
+         border-color: $background;
+      }
+
+      &__img {
+         display: none;
+      }
+   }
+
+   .logs {
+      &::before,
+      &::after {
+         display: none;
+      }
+
+      &__inner {
+         max-width: 70%;
+      }
+   }
+
+   .quote {
+      &__inner {
+         max-width: 100%;
+         &::after {
+            transform: translateX(0);
+         }
+      }
+   }
+
+   .place {
+      position: relative;
+      background: url(./../src/img/place.jpg) top right no-repeat;
+      background-size: cover;
+      &::before {
+         display: none;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 1;
+         background: rgba($color: $primary, $alpha: .8);
+      }
+
+      &__content {
+         position: relative;
+         z-index: 2;
+      }
+
+      &__header {
+         width: 100%;
+         padding-right: 0;
+      }
+
+      &__img {
+         display: none;
+      }
+   }
+
+   .accordion {
+      &__header {
+         font-size: 65px;
+         margin-bottom: 60px;
+      }
+
+      &__control {
+         padding: 15px 25px;
+      }
+   }
+
+   .contacts {
+      &__title {
+         font-size: 70px;
+      }
+   }
+
+   .footer {
+      &::after {
+         display: none;
+      }
+
+      &__header {
+         display: block;
+      }
+
+      &__title {
+         margin-bottom: 35px;
+      }
+   }
+}
+
+@media(max-width: 1023px) {
+
+   .blog {
+      padding: 60px 0;
+      &__item {
+         flex-basis: calc(50% - 30px);
+         img {
+            width: 100%;
+            object-fit: cover;
+         }
+      }
+   }
+
+   .quote {
+      padding: 100px 0;
+   }
+
+   .traveling {
+      &__header {
+         display: block;
+         margin-bottom: 30px;
+      }
+
+      &__info-img {
+         margin-bottom: 25px;
+      }
+
+      &__title {
+         margin: 0 0 25px 0;
+      }
+   }
+
+   .place {
+      padding: 60px 0;
+   }
+
+   .accordion {
+      position: relative;
+      background: url(./../src/img/accordion.jpg) top center no-repeat;
+      background-size: cover;
+      padding: 30px 0;
+      &::after {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 1;
+         background: rgba($color: $primary, $alpha: .5);
+      }
+
+      &__container {
+         display: block;
+      }
+
+      &__header, &__title, &__content {
+         color: $background;
+      }
+
+      &__info {
+         position: relative;
+         z-index: 2;
+      }
+
+      &__control {
+         border-color: $background;
+      }
+
+      &__icon {
+         &::before, &::after {
+            background-color: $background;
+         }
+      }
+
+      &__img {
+         display: none;
+      }
+   }
+
+   .review {
+      padding: 60px 0px 150px;
+      &::before, &::after {
+         display: none;
+      }
+
+      &__title {
+         max-width: 100%;
+         font-size: 55px;
+      }
+
+      &__item {
+         padding: 50px 20px;
+      }
+
+      &__img {
+         margin-bottom: 30px;
+      }
+
+      &__name {
+         font-size: 20px;
+         margin-bottom: 15px;
+      }
+   }
+
+   .contacts {
+      position: relative;
+      background: url(./../src/img/contacts.jpg) top center no-repeat;
+      background-size: cover;
+      padding: 30px 0;
+      &::after {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: 1;
+         background: rgba($color: $primary, $alpha: .5);
+      }
+
+      &__container {
+         display: block;
+      }
+
+      &__header {
+         position: relative;
+         z-index: 2;
+      }
+
+      &__title {
+         color: $background;
+      }
+
+      &__input, &__message {
+         border-color: $background;
+         color: $background;
+      }
+
+      &__img {
+         display: none;
+      }
+   }
+
+   .footer {
+      &__title {
+         font-size: 55px;
+         text-align: center;
+      }
+
+      &__nav-block {
+         justify-content: center;
+      }
+
+      &__nav-items {
+         flex: 0 1 calc(50% - 5px);
+      }
+
+      &__nav-item {
+         text-align: center;
+      }
+   }
+}
+
+@media(max-width: 767px) {
+
+   .menu {
+      &__list {
+         display: block;
+         padding-top: 30px;
+      }
+      &__item {
+         margin: 0 0 30px 0;
+      }
+
+      &__link {
+         font-size: 35px;
+      }
+   }
+
+   .hero {
+      &__title {
+         font-size: 52px;
+      }
+   }
+
+   .logs {
+      &__inner {
+         max-width: 100%;
+      }
+      &__title {
+         font-size: 50px;
+      }
+   }
+
+   .blog {
+      &__item {
+         flex-basis: 100%;
+      }
+
+      &__img {
+         margin-bottom: 20px;
+         &::after {
+            top: 102%;
+         }
+      }
+
+      &__title {
+         font-size: 30px;
+         margin-bottom: 20px;
+      }
+   }
+
+   .quote {
+      &__inner {
+         &::after {
+            display: none;
+         }
+      }
+      &__icon {
+         margin-bottom: 30px;
+      }
+      &__text {
+         font-size: 70px;
+         line-height: 1.1;
+         margin-bottom: 30px;
+      }
+   }
+
+   .traveling {
+      &__container {
+         flex-direction: column;
+      }
+   
+      &__img {
+         order: 2;
+         max-width: fit-content;
+         margin: 0 auto;
+      }
+   
+      &__info {
+         order: 1;
+         position: relative;
+         background: url(./../src/img/img-small.jpg) center center no-repeat;
+         background-size: cover;
+         padding: 40px 5px;
+         &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: rgba($color: $primary, $alpha: .7);
+         }
+      }
+   
+      &__header {
+         position: relative;
+         z-index: 2;
+         
+      }
+   
+      &__title {
+         color: $background;
+      }
+   
+      &__text {
+         color: $background;
+      }
+   
+      &__info-img {
+         display: none;
+      }
+
+      &__btn {
+         position: relative;
+         z-index: 2;
+         svg {
+            fill: #ffffff;
+         }
+      }
+   }
+
+   .accordion {
+      &__header {
+         font-size: 50px;
+         margin-bottom: 40px;
+      }
+
+      &__control {
+         padding: 10px;
+      }
+
+      &__title {
+         font-size: 15px;
+         text-align: left;
+      }
+   }
+
+   .footer {
+      padding: 50px 0;
+
+      &__header {
+         margin-bottom: 40px;
+      }
+   }
+}
+
+@media(max-width: 424px) {
+
+   .hero {
+      &__title {
+         font-size: 45px;
+      }
+   }
+
+   .quote {
+      &__text {
+         font-size: 50px;
+      }
+      &__bottom {
+         font-size: 20px;
+      }
+   }
+
+   .place {
+      background-position-x: center;
+
+      &__title {
+         text-align: center;
+      }
+   }
+
+   .contacts {
+      &__title {
+         font-size: 50px;
+      }
+   }
+
+   .footer {
+      &__nav-items {
+         flex-basis: 100%;
+      }
+
+      &__nav-item {
+         text-align: left;
+      }
+   }
+}

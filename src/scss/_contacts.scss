@@ -1,0 +1,66 @@
+.contacts {
+   padding: 100px 0 200px;
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 15px;
+   }
+
+   &__header {
+      flex: 0 1 40%;
+   }
+
+   &__title {
+      font-family: $acent;
+      font-size: 81px;
+      line-height: 1;
+      font-weight: 700;
+      color: $primary;
+      margin-bottom: 35px;
+   }
+
+   &__input, &__message {
+      width: 100%;
+      border: 3px solid $primary;
+      border-radius: 5px;
+      font-family: $basic;
+      font-size: 21px;
+      color: $primary;
+      background-color: transparent;
+      padding-left: 25px;
+   }
+
+   &__input {
+      height: 61px;
+      margin-bottom: 20px;
+   }
+   
+
+   &__message {
+      height: 226px;
+      resize: none;
+      padding-top: 25px;
+      margin-bottom: 60px;
+   }
+
+   &__button {
+      @extend %button;
+      width: 100%;
+      background-color: $primary;
+      color: #ffffff;
+      &:hover {
+         border: 3px solid $primary;
+         background-color: #ffffff;
+         color: $primary;
+      }
+   }
+
+   &__img {
+      flex: 0 1 55%;
+      img {
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+}

@@ -1,0 +1,71 @@
+.footer {
+   position: relative;
+   padding: 100px 0;
+   background-color: #c4c4c4;
+   &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 40px;
+      width: 399px;
+      height: 146px;
+      background: url(./../src/img/acent/13.png) no-repeat;
+      background-size: cover;
+   }
+
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 10px;
+      margin-bottom: 120px;
+   }
+
+   &__title {
+      flex: 0 1 20%;
+      font-family: $acent;
+      font-size: 64px;
+      line-height: 1;
+      font-weight: 700;
+      color: $primary;
+   }
+
+   &__nav {
+      flex: 0 1 70%;
+   }
+
+   &__nav-title {
+      font-family: $basic;
+      font-size: 25px;
+      font-weight: 900;
+      color: $primary;
+      margin-bottom: 50px;
+   }
+
+   &__nav-block {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 5px;
+   }
+
+   &__nav-items {
+      flex: 0 1 calc(25% - 5px);
+   }
+
+   &__nav-item {
+      margin-bottom: 25px;
+   }
+
+   &__nav-link {
+      font-family: $basic;
+      font-size: 21px;
+      color: $primary;
+   }
+
+   &__bottom {
+      text-align: center;
+      font-family: $basic;
+      font-size: 21px;
+      color: $primary;
+   }
+}

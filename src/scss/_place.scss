@@ -1,0 +1,70 @@
+.place {
+   position: relative;
+   display: flex;
+   padding: 150px 0;
+   background-color: $primary;
+   &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 525px;
+      height: 130px;
+      background: url(./../src/img/acent/10.png) no-repeat;
+      background-size: cover;
+   }
+
+   &__content {
+      flex: 0 0 100%;
+      align-self: center;
+   }
+
+   &__header {
+      width: 50%;
+      padding-right: 100px;
+   }
+
+   &__title {
+      font-family: $acent;
+      font-size: 55px;
+      line-height: 1;
+      font-weight: 700;
+      color: $background;
+      margin-bottom: 100px;
+   }
+
+   &__info-item {
+      &:not(:last-child) {
+         margin-bottom: 40px;
+      }
+   }
+
+   &__info-title {
+      font-size: 25px;
+      font-weight: 900;
+      color: $background;
+      margin-bottom: 20px;
+   }
+
+   &__info-text {
+      font-family: $basic;
+      font-size: 17px;
+      line-height: 1.2;
+      color: $background;
+   }
+
+   &__img {
+      position: relative;
+      flex: 0 0 50%;
+      padding-bottom: 40%;
+      transform: translateX(-100%);
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+}
